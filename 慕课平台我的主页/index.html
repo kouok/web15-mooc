@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/kindeditor/kindeditor-all-min.js"></script>
+	<style>
+		a{
+			color:#666;
+		}
+		.top{
+			background-image: url(images/banner.png);
+			background-size: cover; 
+		}
+		.nav1 .nav-tabs,.nav1  .nav-tabs .nav-link.active{
+			border:none;
+		}
+		.nav1 .nav-tabs .nav-link.active{
+			color:red;
+		}
+		.nav2 .nav-tabs,.nav2  .nav-tabs .nav-link.active{
+			border:none;
+			color: red;
+		}
+		.nav2 .nav-tabs .nav-link.active{
+			border-bottom: 2px solid red;
+		}
+		.ke-container{
+			width: 100% !important;
+		}
+	</style>
+</head>
+<body>
+	<div class="jumbotron jumbotron-fluid top">
+		<div class="row">
+			<div class="col-12">
+				<div class="container">
+				  	<div class="media">
+					  <img src="images/s1.jpg" class="mr-3 rounded-circle " alt="..." width="6%">
+					  <div class="media-body text-white">
+					    <h5 class="mt-0">怒切萝卜</h5>
+					    <div>身份类别：学员</div>
+					    <div>个性签名：我是学员，我是学员</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container nav1">
+		<div class="row">
+			<div class="col-12">
+				<nav>
+				  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+				    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">我的主页</a>
+				    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">好友动态</a>
+				    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">收藏夹</a>
+				  </div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="bg-light my-3 nav2 py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-8 bg-white  border rounded" >
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+					  <li class="nav-item">
+					    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">课程</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">回答</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">动态</a>
+					  </li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+					  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<div class="row mt-3">
+							<div class="card col-12 col-lg-4" style="border: none;">
+							  <img src="images/20161104205906937.jpg" class="card-img-top" alt="...">
+							  <div class="card-body pl-0">
+							    <h5 class="card-title">JDBC与数据库</h5>
+							   <span class="text-dark">123人在学</span>
+							   <span class="text-danger float-right">¥120.00</span>
+							  </div>
+							</div>
+							<div class="card col-12 col-lg-4" style="border: none;">
+							  <img src="images/20161104205906937.jpg" class="card-img-top" alt="...">
+							  <div class="card-body pl-0">
+							    <h5 class="card-title">JDBC与数据库</h5>
+							   <span class="text-dark">123人在学</span>
+							   <span class="text-danger float-right">¥120.00</span>
+							  </div>
+							</div>
+							<div class="card col-12 col-lg-4" style="border: none;">
+							  <img src="images/20161104205906937.jpg" class="card-img-top" alt="...">
+							  <div class="card-body pl-0">
+							    <h5 class="card-title">JDBC与数据库</h5>
+							   <span class="text-dark">123人在学</span>
+							   <span class="text-danger float-right">¥120.00</span>
+							  </div>
+							</div>
+						</div>
+						<div class="row mt-2">
+							<div class="card col-12 col-lg-4" style="border: none;">
+							  <img src="images/20161104205906937.jpg" class="card-img-top" alt="...">
+							  <div class="card-body pl-0">
+							    <h5 class="card-title">JDBC与数据库</h5>
+							   <span class="text-dark">123人在学</span>
+							   <span class="text-danger float-right">¥120.00</span>
+							  </div>
+							</div>
+							<div class="card col-12 col-lg-4" style="border: none;">
+							  <img src="images/20161104205906937.jpg" class="card-img-top" alt="...">
+							  <div class="card-body pl-0">
+							    <h5 class="card-title">JDBC与数据库</h5>
+							   <span class="text-dark">123人在学</span>
+							   <span class="text-danger float-right">¥120.00</span>
+							  </div>
+							</div>
+						</div>
+					  </div>
+					  <div class="tab-pane fade mt-3" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+						  <li class="nav-item">
+						    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">我的提问</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">我的回答</a>
+						  </li>
+						</ul>
+						<div class="tab-content" id="pills-tabContent">
+						  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+								<ul class="list-group list-group-flush">
+								  <li class="list-group-item">
+								    <h6 class="mb-1">讨论区学生回复的第三个问题</h6>
+								    <div class="d-flex w-100 justify-content-between" style="color:#999">
+								      <span>2016-12-1 10:32:42</span>
+								      <span>3回复</span>
+								    </div>
+								  </li>
+								  <li class="list-group-item">
+									 <h6 class="mb-1">讨论区学生回复的第三个问题</h6>
+								    <div class="d-flex w-100 justify-content-between" style="color:#999">
+								      <span>2016-12-1 10:32:42</span>
+								      <span>3回复</span>
+								    </div>
+								  </li>
+								  <li class="list-group-item">
+									 <h6 class="mb-1">讨论区学生回复的第三个问题</h6>
+								    <div class="d-flex w-100 justify-content-between" style="color:#999">
+								      <span>2016-12-1 10:32:42</span>
+								      <span>3回复</span>
+								    </div>
+								  </li>
+								</ul>
+						  </div>
+						  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+							<ul class="list-group list-group-flush">
+								  <li class="list-group-item">
+								    <h6 class="mb-1">讨论区学生提的第二个问题</h6>
+								    <div class="d-flex w-100 justify-content-between" style="color:#999">
+								      <span>2016-12-1 10:32:42</span>
+								      <span>3回复</span>
+								    </div>
+								  </li>
+								  <li class="list-group-item">
+									 <h6 class="mb-1">讨论区学生提的第二个问题</h6>
+								    <div class="d-flex w-100 justify-content-between" style="color:#999">
+								      <span>2016-12-1 10:32:42</span>
+								      <span>3回复</span>
+								    </div>
+								  </li>
+								  <li class="list-group-item">
+									 <h6 class="mb-1">讨论区学生提的第二个问题</h6>
+								    <div class="d-flex w-100 justify-content-between" style="color:#999">
+								      <span>2016-12-1 10:32:42</span>
+								      <span>3回复</span>
+								    </div>
+								  </li>
+								</ul>
+						  </div>
+						</div>
+
+					  </div>
+					  <div class="tab-pane fade mt-3" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+						  <div>
+							<textarea id="textarea"></textarea>
+						  </div>
+						  <div style="overflow: hidden;">
+						  	<button type="button" class="btn btn-danger float-right my-2" id="textareaBtn">提交</button>
+						  </div>
+						  <ul class="list-group list-group-flush">
+								<li class="list-group-item">
+								    <h6 class="mb-1">讨论区学生提的第二个问题</h6>
+								    <div class="d-flex w-100 justify-content-between" style="color:#999">
+								     <span>2016-12-1 10:32:42</span>
+								     <span>3回复</span>
+								    </div>
+								</li>
+						  </ul>	  
+					  </div>
+					</div>
+
+				</div>
+				<div class="col-12 col-lg-3 offset-lg-1 bg-light">
+					<div class=" border rounded bg-white py-2">
+						<div class="row mx-0">
+							<div class="col-6 text-center border-right" style="line-height: 1">
+								<div class="text-dark">4</div>
+								<div style="color:#999"><a href="">关注</a></div>
+							</div>
+							<div class="col-6 text-center" style="line-height: 1">
+								<div class="text-dark">4</div>
+								<div style="color:#999"><a href="">粉丝</a></div>
+							</div>
+						</div>
+					</div>
+					<ul class="list-group list-group-flush mt-4 bg-white border rounded">
+					  <li class="list-group-item border-top-0">
+						<div class="d-flex w-100 justify-content-between">
+						  <span>最近访客</span>
+						  <span><a href="" style="color:#999">更多>></a></span>
+						</div>
+					  </li>
+					  <li class="list-group-item">
+						<div class="row">
+							<div class="card col-4 border-0">
+							  <img src="images/s1.jpg" class="card-img-top rounded-circle" alt="...">
+							  <small class="text-center mt-2">
+							    胡歌
+							  </small>
+							</div>
+							<div class="card col-4 border-0">
+							  <img src="images/s1.jpg" class="card-img-top rounded-circle" alt="...">
+							  <small class="text-center mt-2">
+							    胡歌
+							  </small>
+							</div>
+							<div class="card col-4 border-0">
+							  <img src="images/s1.jpg" class="card-img-top rounded-circle" alt="...">
+							  <small class="text-center mt-2">
+							    胡歌
+							  </small>
+							</div>
+							<div class="card col-4 border-0">
+							  <img src="images/s1.jpg" class="card-img-top rounded-circle" alt="...">
+							  <small class="text-center mt-2">
+							    胡歌
+							  </small>
+							</div>
+							<div class="card col-4 border-0">
+							  <img src="images/s1.jpg" class="card-img-top rounded-circle" alt="...">
+							  <small class="text-center mt-2">
+							    胡歌
+							  </small>
+							</div>
+							<div class="card col-4 border-0">
+							  <img src="images/s1.jpg" class="card-img-top rounded-circle" alt="...">
+							  <small class="text-center mt-2">
+							    胡歌
+							  </small>
+							</div>
+						</div>
+
+					  </li>
+					</ul>
+					<ul class="list-group list-group-flush mt-4 bg-white border rounded">
+					  <li class="list-group-item border-top-0">
+						<div class="d-flex w-100 justify-content-between">
+						  <span>感兴趣的人</span>
+						  <span><a href="" style="color:#999">更多>></a></span>
+						</div>
+					  </li>
+					  <li class="list-group-item">
+						<div class="row">
+							<div class="card col-4 border-0">
+							  <img src="images/s1.jpg" class="card-img-top rounded-circle" alt="...">
+							  <small class="text-center mt-2">
+							    胡歌
+							  </small>
+							</div>
+							<div class="card col-4 border-0">
+							  <img src="images/s1.jpg" class="card-img-top rounded-circle" alt="...">
+							  <small class="text-center mt-2">
+							    胡歌
+							  </small>
+							</div>
+							<div class="card col-4 border-0">
+							  <img src="images/s1.jpg" class="card-img-top rounded-circle" alt="...">
+							  <small class="text-center mt-2">
+							    胡歌
+							  </small>
+							</div>
+							<div class="card col-4 border-0">
+							  <img src="images/s1.jpg" class="card-img-top rounded-circle" alt="...">
+							  <small class="text-center mt-2">
+							    胡歌
+							  </small>
+							</div>
+							<div class="card col-4 border-0">
+							  <img src="images/s1.jpg" class="card-img-top rounded-circle" alt="...">
+							  <small class="text-center mt-2">
+							    胡歌
+							  </small>
+							</div>
+							<div class="card col-4 border-0">
+							  <img src="images/s1.jpg" class="card-img-top rounded-circle" alt="...">
+							  <small class="text-center mt-2">
+							    胡歌
+							  </small>
+							</div>
+						</div>
+
+					  </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+	    var editor;
+	    KindEditor.ready(function(K) {
+	        editor = K.create('#textarea', {
+	            resizeType : 1,
+	            allowPreviewEmoticons : false,
+	            allowImageUpload : false,
+	            items : [
+	                'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+	                'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+	                'insertunorderedlist', '|', 'emoticons', 'image', 'link','table']
+	        });
+	    });
+	</script>
+</body>
+</html>
