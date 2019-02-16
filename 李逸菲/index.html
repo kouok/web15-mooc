@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/default/default.css" />
+    <script charset="utf-8" src="js/kindeditor-min.js"></script>
+    <script charset="utf-8" src="js/zh_CN.js"></script>
+
+    <style>
+        body{
+        	background-color:#f4f6f8;
+        }
+        .media>img{
+        	width: 80px;
+        	height: 80px;
+
+        }
+        .head{
+        	width: 60px;
+        	height: 60px;
+        }
+        .zl{
+        	width: 771px;
+        	height: 590px;
+        }
+        .zr{
+        	width: 311px;
+        	height: 590px;
+        }
+    </style>
+    <style>
+			form {
+				margin: 0;
+			}
+			textarea {
+				display: block;
+			}
+	</style>
+	<script>
+			var editor;
+			KindEditor.ready(function(K) {
+				editor = K.create('textarea[name="content"]', {
+					resizeType : 1,
+					allowPreviewEmoticons : false,
+					allowImageUpload : false,
+					items : [
+						'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+						'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+						'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+				});
+			});
+	</script>
+</head>
+<body>
+<!-- 顶部 -->
+	<div class="jumbotron jumbotron-fluid mb-0" style="background-image: url(images/banner.png);">
+	  <div class="container" >
+           <div class="media">
+			  <img src="images/s1.jpg" class="align-self-center mr-3 rounded-circle" alt="...">
+			  <div class="media-body">
+			    <h5 class="mt-0 text-white">怒切萝卜</h5>
+			    <p class="text-white" style="font-size: 12px;">身份类别：学员<br>个性签名...</p>
+			  </div>
+		   </div>
+	  </div>
+	</div>
+<!--导航 -->
+    <div class="bg-white" style="width: 100%;">
+	    <nav class=" container navbar navbar-expand-lg navbar-light bg-white">
+				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				    <div class="navbar-nav">
+				      <a class="nav-item nav-link active" href="#">我的主页 <span class="sr-only">(current)</span></a>
+				      <a class="nav-item nav-link" href="#">好友动态</a>
+				      <a class="nav-item nav-link" href="#">收藏夹</a>
+				    </div>
+				  </div>
+		</nav>
+	</div>
+<!--主体 -->
+   
+    <section class="container bg-white mt-4">
+      <!-- 内容主体 -->
+        <div class="zl float-left bg-white">
+	         <ul class="nav nav-tabs" id="myTab" role="tablist">
+				  <li class="nav-item">
+				    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">课程</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">问答</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">动态</a>
+				  </li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                       <div class="row mt-2">
+                            <div class="col-4">
+                                 <div class="card" >
+									  <img src="images/20161104205906937.jpg" class="card-img-top" alt="...">
+									  <div class="card-body">
+									    <h5 class="card-title">HTML框架集与布局</h5>
+									    <p class="card-text text-dark">132人在学</p>
+									  </div>
+								</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card" >
+									  <img src="images/20161104205906937.jpg" class="card-img-top" alt="...">
+									  <div class="card-body">
+									    <h5 class="card-title">HTML框架集与布局</h5>
+									    <p class="card-text text-dark">132人在学</p>
+									  </div>
+								</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card" >
+									  <img src="images/20161104205906937.jpg" class="card-img-top" alt="...">
+									  <div class="card-body">
+									    <h5 class="card-title">HTML框架集与布局</h5>
+									    <p class="card-text text-dark">132人在学</p>
+									  </div>
+								</div>
+                            </div>
+                       </div>	
+				  </div>
+				  <div class="tab-pane fade container" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				     <div>
+	                       <div class="row ml-4 mt-4" style="font-size: 14px;">我的提问</div>
+	                       <div class="row ml-4 mt-4" style="font-size: 14px;">讨论区学生提问第二个问题</div>
+	                       <div class="row ml-4 mt-4 text-dark" style="font-size: 14px;">2016-11-01 09:56:27</div>
+	                       <div class=" ml-4" style="border-bottom:1px solid; height: 40px;width:700px;"></div>
+                     </div>
+                      <div>
+	                       <div class="row ml-4 mt-4" style="font-size: 14px;">我的提问</div>
+	                       <div class="row ml-4 mt-4" style="font-size: 14px;">讨论区学生提问第二个问题</div>
+	                       <div class="row ml-4 mt-4 text-dark" style="font-size: 14px;">2016-11-01 09:56:27</div>
+	                       <div class=" ml-4" style="border-bottom:1px solid; height: 40px;width:700px;"></div>
+                     </div>
+				  </div>
+				  <div class="tab-pane fade container" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                       <div class="row ml-2 mt-4">
+							<form>
+								<textarea name="content" style="width:700px;height:200px;visibility:hidden;">请输入讨论内容</textarea>
+							</form>  
+                       </div>     
+				  </div>
+			</div>
+		</div>
+		<!-- 侧边栏 -->
+		<div class="zr float-left ml-4">
+             <div class="card" style="height:272px; ">
+				  <div class="card-header">
+				     最近访客
+				  </div>
+				  <div class="card-body">
+					    <blockquote class="blockquote mb-0 float-left ">
+					      <img src="images/s1.jpg" class="head align-self-center mr-3 rounded-circle" alt="...">
+					      <p style="font-size: 11px;color: grey">BANGBANG</p>
+					    </blockquote>
+					    <blockquote class="blockquote mb-0 float-left ml-4">
+					      <img src="images/s1.jpg" class="head align-self-center mr-3 rounded-circle" alt="...">
+					      <p style="font-size: 11px;color: grey">BANGBANG</p>
+					    </blockquote>
+					    <blockquote class="blockquote mb-0 float-left ml-3">
+					      <img src="images/s1.jpg" class="head align-self-center mr-3 rounded-circle" alt="...">
+					      <p style="font-size: 11px;color: grey">BANGBANG</p>
+					    </blockquote>
+				  </div>
+			</div>
+			<div class="card mt-4" style="height:272px; ">
+				  <div class="card-header">
+				     最近访客
+				  </div>
+				  <div class="card-body">
+					    <blockquote class="blockquote mb-0 float-left ">
+					      <img src="images/s1.jpg" class="head align-self-center mr-3 rounded-circle" alt="...">
+					      <p style="font-size: 11px;color: grey">BANGBANG</p>
+					    </blockquote>
+					    <blockquote class="blockquote mb-0 float-left ml-4">
+					      <img src="images/s1.jpg" class="head align-self-center mr-3 rounded-circle" alt="...">
+					      <p style="font-size: 11px;color: grey">BANGBANG</p>
+					    </blockquote>
+					    <blockquote class="blockquote mb-0 float-left ml-3">
+					      <img src="images/s1.jpg" class="head align-self-center mr-3 rounded-circle" alt="...">
+					      <p style="font-size: 11px;color: grey">BANGBANG</p>
+					    </blockquote>
+				  </div>
+			</div>
+		</div>
+    </section>
+    
+</body> 
+</html>
